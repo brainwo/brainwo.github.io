@@ -1,0 +1,30 @@
+:root {
+    --bg: #22272e;
+    --text: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #22272e;
+        --text: white;
+    }
+}
+
+html {
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 12px;
+}
+
+h1 {
+    margin-top: 80px;
+}
+
+a {
+    color: #539bf4;
+    text-decoration: none;
+}
+
+li {
+    padding: 4px;
+}
