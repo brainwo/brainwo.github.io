@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="unified.css" />
+    <title>Unified Design System - Brain Wo's pesonal blog</title>
+  </head>
+  <body>
+    <div>
+      <p>Design study</p>
+      <h1 style="margin-top: 4px">Unified Design System</h1>
+      <p>UI components to its smallest common resemblance</p>
+      <p>
+        last updated: Jul 24, 2023 (<a href="https://github.com/brainwo/brainwo.github.io">GitHub</a
+        >)
+        <br />
+        This site requires JavaScript to work properly
+      </p>
+    </div>
+    <section id="contents">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <ol>
+          <li><a href="#goal">Goal</a></li>
+          <li><a href="#scope">Scope</a></li>
+        </ol>
+        <li><a href="#theme">Theme</a></li>
+        <ol>
+          <li><a href="#color">Color</a></li>
+          <li><a href="#brightness">Brightness</a></li>
+          <li><a href="#color">Typography</a></li>
+        </ol>
+        <li><a href="#widget">Widgets</a></li>
+        <ol>
+          <li><a href="#button">Button</a></li>
+          <li><a href="#textfield">Text Field</a></li>
+          <li><a href="#brightness">Text Field</a></li>
+        </ol>
+        <li><a href="#demo">Demo</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2 id="introduction"><a href="#introduction">Introduction</a></h2>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+      </p>
+      <!-- <aside>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+        Lorem ipsum dolor sit amet.
+       </aside> -->
+      <div class="button-group content">
+        <div style="flex-grow: 1"></div>
+        <div class="macos">
+          <h3>macOS</h3>
+          <input type="button" value="Clickable" />
+          <input type="button" value="Active" class="active" />
+          <input type="button" value="Disabled" disabled />
+          <input type="button" value="Clickable" class="filled" />
+          <input type="button" value="Active" class="filled active" />
+          <input type="button" value="Disabled" class="filled" disabled />
+        </div>
+        <div class="arc">
+          <h3>Arc</h3>
+          <input type="button" value="Clickable" />
+          <input type="button" value="Active" class="active" />
+          <input type="button" value="Disabled" disabled />
+        </div>
+        <div class="fluent">
+          <h3>Fluent</h3>
+          <input type="button" value="Clickable" />
+          <input type="button" value="Active" class="active" />
+          <input type="button" value="Disabled" disabled />
+          <input type="button" value="Clickable" class="filled" />
+          <input type="button" value="Active" class="filled active" />
+          <input type="button" value="Disabled" class="filled" disabled />
+        </div>
+        <div class="material">
+          <h3>Material</h3>
+          <input type="button" value="Clickable" />
+          <input type="button" value="Active" class="active" />
+          <input type="button" value="Disabled" disabled />
+          <input type="button" value="Clickable" class="filled" />
+          <input type="button" value="Active" class="filled active" />
+          <input type="button" value="Disabled" class="filled" disabled />
+          <input type="button" value="Clickable" class="toned" />
+          <input type="button" value="Active" class="toned active" />
+          <input type="button" value="Disabled" class="toned" disabled />
+        </div>
+        <div class="adwaita">
+          <h3>Adwaita</h3>
+          <input type="button" value="Clickable" />
+          <input type="button" value="Active" class="active" />
+          <input type="button" value="Disabled" disabled />
+        </div>
+        <div class="pantheon">
+          <h3>Pantheon</h3>
+          <input type="button" value="Clickable" />
+          <input type="button" value="Active" class="active" />
+          <input type="button" value="Disabled" disabled />
+        </div>
+        <div class="win2k">
+          <h3>win2k</h3>
+          <input type="button" value="Clickable" />
+          <input type="button" value="Active" class="active" />
+          <input type="button" value="Disabled" disabled />
+        </div>
+        <div style="flex-grow: 1"></div>
+      </div>
+    </section>
+    <section>
+      <h2 style="display: flex" id="demo">
+        <span>Demo</span>
+        <span style="flex-grow: 1"></span>
+        <select name="style" onchange="changeStyle()">
+          <option value="macos">macOS</option>
+          <option value="arc">Arc</option>
+          <option value="fluent">Fluent</option>
+          <option value="win2k">win2k</option>
+        </select>
+      </h2>
+      <div
+        id="demo-content"
+        class="content macos"
+        style="overflow: hidden; height: 500px; position: relative"
+      >
+        <div
+          class="window"
+          style="position: absolute; left: 100px; top: 100px; width: 300px; height: 250px"
+        >
+          <div class="title-bar">
+            <span style="display: flex">
+              <span
+                style="
+                  width: 12px;
+                  height: 12px;
+                  margin-right: 8px;
+                  margin-top: auto;
+                  margin-bottom: auto;
+                  background-color: #ccc;
+                  border-radius: 2px;
+                "
+              ></span>
+              Age Prediction
+            </span>
+            <input type="button" style="cursor: default" />
+            <input type="button" style="cursor: default" />
+            <input type="button" style="cursor: default" />
+          </div>
+          <div class="column" style="padding: 16px; flex-grow: 1">
+            <div style="flex-grow: 1"></div>
+            <div style="width: max-content">Input your age below:</div>
+            <div style="height: 8px"></div>
+            <input type="text" />
+            <div style="height: 8px"></div>
+            <div class="row">
+              <div style="flex-grow: 1"></div>
+              <input type="button" style="flex-grow: 1" value="Enter" />
+              <div style="flex-grow: 1"></div>
+            </div>
+            <div style="flex-grow: 1"></div>
+          </div>
+        </div>
+        <div class="window" style="position: absolute; left: 80px; top: 80px; width: min-content">
+          <div class="title-bar">
+            <span style="display: flex">
+              <span
+                style="
+                  width: 12px;
+                  height: 12px;
+                  margin-right: 8px;
+                  margin-top: auto;
+                  margin-bottom: auto;
+                  background-color: #ccc;
+                  border-radius: 2px;
+                "
+              ></span>
+              Counter App
+            </span>
+            <input type="button" style="cursor: default" />
+            <input type="button" style="cursor: default" />
+            <input type="button" style="cursor: default" />
+          </div>
+          <div class="column" style="padding: 16px">
+            <div style="font-weight: 700; width: max-content">
+              You have pressed this button for:
+            </div>
+            <div style="height: 8px"></div>
+            <div style="font-size: 16pt" id="button-count">0 times</div>
+            <div style="height: 16px"></div>
+            <div class="row">
+              <div style="flex-grow: 1"></div>
+              <input
+                type="button"
+                style="flex-grow: 1; width: 80px"
+                value="Decrease"
+                onclick="decreaseCounter()"
+              />
+              <div style="width: 8px"></div>
+              <input
+                type="button"
+                class="filled"
+                style="flex-grow: 1; width: 80px"
+                value="Increase"
+                onclick="increaseCounter()"
+              />
+              <div style="flex-grow: 1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="window" style="position: absolute; left: 160px; top: 200px; display: none">
+          <div class="title-bar">
+            <span style="display: flex">
+              <span></span>
+              Popup Window
+            </span>
+            <input type="button" style="cursor: default" />
+          </div>
+          <div class="column" style="padding: 16px">
+            <div>Hello World</div>
+            <div style="height: 16px"></div>
+            <div class="row">
+              <div style="flex-grow: 1"></div>
+              <input type="button" style="width: 60px" value="Ok" />
+              <div style="width: 8px"></div>
+              <input type="button" style="width: 60px" value="Cancel" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li>
+          Flutter implementation for macOS:
+          <a href="https://macosui.github.io/macos_ui"> https://macosui.github.io/macos_ui </a>
+        </li>
+        <li>
+          Arc Theme for GTK:
+          <a href="https://github.com/jnsh/arc-theme"> https://github.com/jnsh/arc-theme </a>
+        </li>
+        <li>https://www.w3.org/TR/css-color-4/#typedef-system-color</li>
+        <li>https://developer.mozilla.org/en-US/docs/Web/CSS/system-color</li>
+        <li>
+          Apple official macOS Sonoma Design Resource for Figma -
+          <a href="https://www.figma.com/community/file/1251588934545918753">
+            https://www.figma.com/community/file/1251588934545918753
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <button class="picker" title="Hello mom">Pick</button>
+    <script src="./unified.js"></script>
+  </body>
+</html>
